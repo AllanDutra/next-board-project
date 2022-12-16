@@ -15,7 +15,7 @@ export default function Home() {
             Uma ferramenta para seu dia a dia. Escreva, planeje e organize-se.
           </h1>
           <p>
-            <span>100% Gratuita</span>e online.
+            <span>100% Gratuita</span> e online.
           </p>
         </section>
 
