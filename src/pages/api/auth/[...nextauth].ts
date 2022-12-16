@@ -8,5 +8,29 @@ export const authOptions = {
       scope: 'read:user'
     }),
   ],
+  callbacks: {
+    async session(session, profile) {
+      try {
+        return {
+          ...session,
+          id: profile.sub
+        }
+      } catch {
+        return {
+          ...session,
+          id: null
+        }
+      }
+    },
+    async signIn(user, account, profile) {
+      const { email } = user;
+      try {
+        return true;
+      } catch (err) {
+        console.log("DEU ERRO: ", err);
+        return false;
+      }
+    }
+  }
 };
 export default NextAuth(authOptions);
