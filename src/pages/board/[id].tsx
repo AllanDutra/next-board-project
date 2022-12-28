@@ -77,7 +77,19 @@ export const getServerSideProps: GetServerSideProps = async ({
       };
 
       return JSON.stringify(taskDetailsData);
+    })
+    .catch(() => {
+      return {};
     });
+
+  if (Object.keys(taskDetailsData).length === 0) {
+    return {
+      redirect: {
+        destination: "/board",
+        permanent: false,
+      },
+    };
+  }
 
   return {
     props: {
