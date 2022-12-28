@@ -7,6 +7,9 @@ import { PayPalButtons } from "@paypal/react-paypal-js";
 import firebase from "../../services/firebaseConnection";
 import { useState } from "react";
 
+import Image from "next/image";
+import rocketImg from "../../../public/images/rocket.svg";
+
 interface DonateProps {
   userData: {
     nome: string;
@@ -37,11 +40,16 @@ export default function Donate({ userData }: DonateProps) {
         <title>Ajude a plataforma board a ficar online!</title>
       </Head>
       <main className={styles.container}>
-        <img src="/images/rocket.svg" alt="Seja Apoiador" />
+        <Image src={rocketImg} alt="Seja Apoiador" />
 
         {vip && (
           <div className={styles.vip}>
-            <img src={userData.image} alt="Foto de perfil do usuário" />
+            <Image
+              width={50}
+              height={50}
+              src={userData.image}
+              alt="Foto de perfil do usuário"
+            />
             <span>Parabéns você é um novo apoiador!</span>
           </div>
         )}

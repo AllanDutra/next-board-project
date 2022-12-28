@@ -5,6 +5,9 @@ import styles from "../styles/styles.module.scss";
 import firebase from "../services/firebaseConnection";
 import { useState } from "react";
 
+import Image from "next/image";
+import boardUser from "../../public/images/board-user.svg";
+
 type DonorData = {
   id: string;
   donate: boolean;
@@ -25,7 +28,7 @@ export default function Home({ donorsData }: HomeProps) {
         <title>Board - Organizando suas tarefas. </title>
       </Head>
       <main className={styles.contentContainer}>
-        <img src="/images/board-user.svg" alt="Ferramenta board" />
+        <Image src={boardUser} alt="Ferramenta board" />
 
         <section className={styles.callToAction}>
           <h1>
@@ -39,7 +42,13 @@ export default function Home({ donorsData }: HomeProps) {
         {donors.length !== 0 && <h3>Apoiadores</h3>}
         <div className={styles.donors}>
           {donors.map((donor) => (
-            <img key={donor.id} src={donor.image} alt="Imagem do doador" />
+            <Image
+              width={65}
+              height={65}
+              key={donor.id}
+              src={donor.image}
+              alt="Imagem do doador"
+            />
           ))}
         </div>
       </main>
