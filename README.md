@@ -1,34 +1,53 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+## 💻 Board Project - [View](https://next-board-project.vercel.app/)
 
-## Getting Started
+This project was developed during the course ["NextJS from zero to advanced in practice 2023"](https://www.udemy.com/course/nextjs-zero-ao-avancado/) promoted by Matheus Fraga on Udemy. The project used:
 
-First, run the development server:
+- Firebase firestore resources for the application's CRUD features;
+- SSR (Server Side Rendering) of Next JS
+- SSG (Static Site Generation) from Next JS
+- Next Auth for OAuth2.0 authentication with GitHub
+- Sass for styling
+- PayPal for payment services
 
-```bash
-npm run dev
-# or
-yarn dev
-```
+![imagem-de-apresentacao](https://ik.imagekit.io/ghmg33v8b/projects/next-board-project/Capturar_0v032YP0T.PNG?ik-sdk-version=javascript-1.4.3&updatedAt=1672508797309)
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## 🌐 Status
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+<p>Finished project ✅</p>
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
+## 🧰 Prerequisites
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+<p>Node JS v 18.x</p>
 
-## Learn More
+Enviroments Variables
 
-To learn more about Next.js, take a look at the following resources:
+- GITHUB_CLIENT_ID
+- GITHUB_CLIENT_SECRET
+- NEXTAUTH_URL
+- NEXT_PUBLIC_PAYPAL_CLIENT_ID
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## 🔧 Installation
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+`$ git clone https://github.com/AllanDutra/next-board-project.git`
 
-## Deploy on Vercel
+`$ cd next-board-project`
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+`$ npm install`
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+`$ npm run dev`
+
+<strong>The application will be listening on the address https://localhost:3000!</strong>
+
+## 🔨 Tools used
+
+<div>
+<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original-wordmark.svg" height="80" />
+<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/firebase/firebase-plain-wordmark.svg" height="80" />
+<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original-wordmark.svg" height="80" />
+<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/sass/sass-original.svg" height="80" />
+<img src="https://logodownload.org/wp-content/uploads/2014/10/paypal-logo.png" height="80" />
+</div>
+
+<hr>
+
+Developed by [Allan Dutra](https://www.linkedin.com/in/allan-dutra-308a8520a/)!
